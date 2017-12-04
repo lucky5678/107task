@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 
 var get_letter_interval = require('../../practices/collectionOperator/get_letter_interval_2.js');
 

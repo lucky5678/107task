@@ -1,5 +1,28 @@
 function count_same_elements(collection) {
   //在这里写入代码
+  var result = [];
+
+  for (var i = 0; i < collection.length; i++) {
+    var elem = existKey(collection[i], result);
+
+    if (elem) {
+      elem.count++;
+    } else {
+      result.push({"key": collection[i], "count": 1});
+    }
+  }
+
+  return result;
+}
+function existKey(key, array) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].key == key) {
+      return array[i];
+    }
+  }
+
+  return null;
+
 }
 
 module.exports = count_same_elements;

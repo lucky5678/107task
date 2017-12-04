@@ -3,9 +3,9 @@
 function collect_all_even(collection_a) {
   var result = [];
 
-  for(var i = 0; i < collection_a.length;++i) {
-    if(collection_a[i]%2 === 0) {
-     result.push(collection_a[i]);
+  for (var i = 0; i < collection_a.length; ++i) {
+    if (collection_a[i] % 2 === 0) {
+      result.push(collection_a[i]);
     }
   }
 
